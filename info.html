@@ -1,1 +1,18 @@
-<div>{{activeCourse.hours}}</div>
+<h1>Course Info</h1>
+<div>
+	<h5>Course Name : {{activeCourse.name}}<br></h5>
+	<h5>Instructor: {{activeCourse.instructor}}<br></h5>
+	<h5>Email: {{activeCourse.email}}<br></h5>
+	<h5>Office: {{activeCourse.office}}<br></h5>
+	<h3>Office Hours</h3>
+	<ul ng-repeat="(key, value) in activeCourse.hours">
+		{{key}}: {{value}}
+	</ul>
+	<h3>Mark Breakdown</h3>
+	<ul ng-repeat="(key, value) in activeCourse.marks">
+		{{key}} - {{value}}
+	</ul>
+</div>
+<div class="btn accent" ng-click="selectTab(3)">Back to Course News</div>
+<div class="btn accent" ng-click="selectTab(2)">Course List</div><br/>
+<div class="btn accent" ng-click="selectTab(1)">Logout</div>

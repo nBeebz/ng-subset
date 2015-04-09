@@ -59,4 +59,15 @@ select,
 textarea {
   max-width: 280px; }
 
+ul {
+  list-style-type: none;
+  position: relative;
+  left: -20px; }
+
+li {
+  cursor: pointer; }
+
+li:hover {
+  background-color: #FF9000; }
+
 /*# sourceMappingURL=style.css.map */

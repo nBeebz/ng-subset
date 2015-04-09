@@ -1,11 +1,16 @@
-<div ng-click="selectTab(1)">Logout</div>
-<div ng-click="selectTab(2)">Back to course list</div>
 <div ng-show="isSelected(3)">
-	<div ng-click="selectTab(5)">Add New</div>
-	<div ng-click="selectTab(4)">Course Info</div>
-	<div ng-repeat="newsItem in news">
-		<ul>
-			<li>{{newsItem.news1}}</li>
-		</ul>
-	</div>
+	<div class="btn accent" ng-click="selectTab(5)" ng-show="user.instructor">Add New</div>
+	<div class="btn accent" ng-click="selectTab(4)">Course Info</div>
+	<ul>
+		<h1>Course News</h1>
+		<li ng-repeat="newsItem in news">
+			<h4>{{newsItem.title}}</h4>
+			{{newsItem.news1}}<br>
+			posted by {{newsItem.name}}<br/>
+			on {{newsItem.time}}
+		</li>
+		<li ng-show="!news.length">No News =(</li>
+	</ul>
 </div>
+<div class="btn accent" ng-click="selectTab(1)">Logout</div>
+<div class="btn accent" ng-click="selectTab(2)">Back to course list</div>

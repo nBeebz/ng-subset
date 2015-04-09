@@ -15,6 +15,21 @@
 
 		$scope.getUser = function(){
 			
+			var data =
+{
+	id: "A00000000",
+	name: "Medhat Elmasry",
+	password: "password",
+	instructor: true,
+	courses: JSON.stringify([ "COMP4976",
+        "COMP4977",
+        "COMP4560",
+        "COMP4711",
+        "COMP4735",
+        "BLAW3600"])
+};
+console.log(JSON.stringify(data));
+$http.post('http://subset.navbhatti.com/api/students', JSON.stringify(data)).success(function(){alert("YES");});
 
 			var tab = 1;
 			var id = $("#user").val();
