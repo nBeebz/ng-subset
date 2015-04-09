@@ -1,0 +1,62 @@
+.table-centered {
+  margin: 0 auto !important;
+  float: none !important; }
+
+li.active > a {
+  background-color: white !important;
+  color: #FF9000 !important; }
+
+input {
+  margin: 15px 0 0 15px !important; }
+
+label {
+  position: relative;
+  top: 10px; }
+
+#body {
+  border: 1px solid #FFB85C;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.navbar-toggle {
+  background-color: #FF9000 !important; }
+
+#header {
+  background-color: transparent;
+  border: none; }
+
+.btn {
+  margin: 15px !important; }
+
+.accent {
+  background-color: #FF9000;
+  color: white !important;
+  border-color: #FF9000 !important; }
+
+.accent:hover {
+  background-color: #FFB85C !important; }
+
+a {
+  color: white; }
+
+div.row {
+  margin-top: 35px; }
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px; }
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+  max-width: 280px; }
+
+/*# sourceMappingURL=style.css.map */

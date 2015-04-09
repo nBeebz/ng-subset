@@ -1,0 +1,7 @@
+<div ng-click="selectTab(1)">Logout</div>
+<div ng-repeat="course in courses">
+	<ul>
+		Course List
+		<li ng-click="showCourse($index)">{{course.id}}</li>
+	</ul>
+</div>
